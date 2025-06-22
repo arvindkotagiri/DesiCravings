@@ -16,8 +16,8 @@ const Footer1 = () => {
                             <div className="fancy-box">
                                 <div className="item1"><i className="bi bi-geo-alt-fill"></i></div>
                                 <div className="item2">
-                                    <h6>address</h6>
-                                    <p>4648 Rocky Road Philadelphia </p>
+                                    <h6>Address</h6>
+                                    <p>604 Doug Russell Rd suite e </p>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@ const Footer1 = () => {
                             <div className="fancy-box">
                                 <div className="item1"><i className="bi bi-envelope-fill"></i></div>
                                 <div className="item2">
-                                    <h6>send email</h6>
+                                    <h6>Email</h6>
                                     <p>info@exmple.com</p>
                                 </div>
                             </div>
@@ -34,8 +34,8 @@ const Footer1 = () => {
                             <div className="fancy-box">
                                 <div className="item1"><i className="bi bi-telephone-fill"></i></div>
                                 <div className="item2">
-                                    <h6>call emergency</h6>
-                                    <p>+88 0123 654 99</p>
+                                    <h6>Mobile</h6>
+                                    <p>+1 (972) 957-4009</p>
                                 </div>
                             </div>
                         </div>
@@ -47,14 +47,12 @@ const Footer1 = () => {
                         <div className="single-footer-widget">
                             <div className="widget-head">
                                 <Link href="/">
-                                    <Image src="/assets/img/logo/logoWhite.svg" alt="img" width={167} height={58}   />
+                                    <Image src="/assets/img/logo/DC_Logo.jpg" alt="img" width={167} height={58}   />
                                 </Link>
                             </div>
                             <div className="footer-content">
                                 <p>
-                                    Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia
-                                    curabitur
-                                    lacinia mollis
+                                    Get in touch with us for authentic Telugu flavors served with a smile — right here in Texas.
                                 </p>
                                 <div className="social-icon d-flex align-items-center">
                                     <a href="#"><i className="bi bi-facebook"></i></a>
@@ -146,17 +144,17 @@ const Footer1 = () => {
                     <div className="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".4s">
                         <div className="single-footer-widget">
                             <div className="widget-head">
-                                <h3>Contact Us</h3>
+                                <h3>Operating Hours</h3>
                             </div>
                             <ul className="list-area">
                                 <li className="mb-2">
-                                    Monday – Friday: <span className="text-theme-color2"> 8am – 4pm </span>
+                                    Monday – Friday: <span className="text-theme-color2"> 9am – 12am </span>
                                 </li>
                                 <li>
-                                    Saturday: <span className="text-theme-color2"> 8am – 12am </span>
+                                    Saturday & Sunday: <span className="text-theme-color2"> 9am – 1am </span>
                                 </li>
                             </ul>
-                            <form className="mt-4">
+                            {/* <form className="mt-4">
                                 <div className="form-control">
                                     <input className="email" type="email" placeholder="Your email address" /> 
                                     <button type="submit" className="submit-btn"><i className="bi bi-arrow-right"></i></button>
@@ -166,7 +164,7 @@ const Footer1 = () => {
                                     <label htmlFor="checkbox">I agree to the <a href="#">Privacy Policy.
                                         </a></label>
                                 </div>
-                            </form>
+                            </form> */}
                         </div>
                     </div>
                 </div>

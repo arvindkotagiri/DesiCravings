@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Nav from './Nav';
 import Link from 'next/link';
 import Image from 'next/image';
+import OpenNowStatus from './OpenNowStatus';
 export default function Header2({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState();
@@ -43,8 +44,8 @@ export default function Header2({ variant }) {
           <div className="cs_top_header_in">
             <div className="cs_top_header_left header-info">
               <ul className="cs_top_nav d-flex flex-wrap align-items-center cs_fs_12 text-white m-0 p-0">
-                <li><i className="bi bi-geo-alt-fill"></i>New market Sandigo - California</li>
-                <li><i className="bi bi-alarm"></i>9.00 am - 5.00 pm</li>
+                <li><i className="bi bi-geo-alt-fill"></i>604 Doug Russell Rd - Arlington</li>
+                <OpenNowStatus />
               </ul>
             </div>
             <div className="cs_top_header_right">
@@ -52,10 +53,10 @@ export default function Header2({ variant }) {
                 <div className="cs_header_social_links top-header-social-icon">
                 Follow Us:
                   <ul>
-                    <li><a href="#"><i className="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com/desicravingsarlington"><i className="bi bi-facebook"></i></a></li>
                     <li><a href="#"><i className="bi bi-twitter"></i></a></li>
                     <li><a href="#"><i className="bi bi-linkedin"></i></a></li>
-                    <li><a href="#"><i className="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/mydesicravings/"><i className="bi bi-instagram"></i></a></li>
                 </ul>
                 </div>
               </div>
@@ -69,7 +70,8 @@ export default function Header2({ variant }) {
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
             <Link className="cs_site_branding" href="/">
-                <Image src="/assets/img/logo/logoWhite.svg" alt="img" width={167} height={58}   />
+                {/* <Image src="/assets/img/logo/logoWhite.svg" alt="img" width={167} height={58}   /> */}
+                <Image src="/assets/img/logo/DC_Logo.jpg" alt="img" width={167} height={58}   />
               </Link>
               </div>
               <div className="cs_main_header_center">

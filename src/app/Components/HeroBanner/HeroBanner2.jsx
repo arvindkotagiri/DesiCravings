@@ -37,9 +37,9 @@ const HeroBanner2 = () => {
       };  
 
     const heroContent = [
-        {img:'/assets/img/banner/bannerThumb2_1.png', subtitle:'WELCOME FRESHEAT', title:'SPICY FRIED CHICKEN', btnname:'ORDER NOW'},
-        {img:'/assets/img/banner/bannerThumb2_2.png', subtitle:'WELCOME FRESHEAT', title:'SPICY FRIED NOODLES', btnname:'ORDER NOW'},
-        {img:'/assets/img/banner/bannerThumb2_3.png', subtitle:'WELCOME FRESHEAT', title:'SPICY FRIED PASTA', btnname:'ORDER NOW'},
+        {img:'/assets/img/banner/bannerThumb2_1.png', subtitle:'DESI CRAVINGS', title:'Sizzling Dosas', btnname:'ORDER NOW'},
+        {img:'/assets/img/banner/bannerThumb2_2.png', subtitle:'DESI CRAVINGS', title:'Authentic Pulavs', btnname:'ORDER NOW'},
+        {img:'/assets/img/banner/bannerThumb2_3.png', subtitle:'DESI CRAVINGS', title:'South Indian Thali', btnname:'ORDER NOW'},
       ]; 
 
     return (

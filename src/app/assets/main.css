@@ -5994,6 +5994,31 @@ input.main-search-input::placeholder {
   position: relative;
 }
 
+.marquee-wrapper-custom {
+  background-color: transparent;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+
+.text-slider-item {
+  font-size: 3rem;
+    line-height: 3.5rem; 
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bcb8b1;
+  margin-right: 2rem;
+  font-family: var(--title-font);
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.text-slider-item:hover {
+  color: var(--theme);
+  background-size: 100% 3px;
+}
+
+
 /* 19.Gallery */
 .gallery-wrapper {
   overflow: hidden;
@@ -13893,4 +13918,14 @@ margin-bottom: 0 !important;
   background-color: #f8f9fa;
   border-color: #D4DCFF;
   padding: 15px 10px;
+}
+
+/* Custom Styles */
+.dca-mt {
+  margin-top: 120px !important;
+}
+
+.dca-contact-getintouch-img {
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
 }

@@ -6,33 +6,37 @@ const Contact3 = () => {
 <div className="contact-us-section section-padding fix">
         <div className="contact-box-wrapper style1">
             <div className="container">
-                <div className="row gy-4">
-                    <div className="col-md-6 col-xl-3">
-                        <div className="contact-box style1">
-                            <div className="contact-icon"> <Image src="/assets/img/icon/location.png" alt="img" width={70} height={70}   /></div>
+                <div className="row gy-4 align-items-stretch">
+                    <div className="col-md-6 col-xl-3 h-100">
+                        <div className="contact-box style1 h-100">
+                            <div className="contact-icon"> <Image src="/assets/img/icon/location2.png" alt="img" width={70} height={70}   /></div>
                             <h3 className="title">Our Address</h3>
-                            <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                            <p>604 Doug Russell Rd suite E</p>
+                            <p style={{"visibility":"hidden"}}>Dummy</p>
                         </div>
                     </div>
-                    <div className="col-md-6 col-xl-3">
-                        <div className="contact-box style1">
-                            <div className="contact-icon"><Image src="/assets/img/icon/gmail.png" alt="img" width={70} height={70}   /></div>
-                            <h3 className="title">info@exmple.com</h3>
-                            <p>Email us anytime for any kind ofquety.</p>
+                    <div className="col-md-6 col-xl-3 h-100">
+                        <div className="contact-box style1 h-100">
+                            <div className="contact-icon"><Image src="/assets/img/icon/gmail2.png" alt="img" width={70} height={70}   /></div>
+                            <h3 className="title">Email</h3>
+                            <p>info@exmple.com</p>
+                            <p style={{"visibility":"hidden"}}>Dummy</p>
                         </div>
                     </div>
-                    <div className="col-md-6 col-xl-3">
-                        <div className="contact-box style1">
-                            <div className="contact-icon"><Image src="/assets/img/icon/phone.png" alt="img" width={70} height={70}   /></div>
-                            <h3 className="title">Hot: +208-666-01112</h3>
-                            <p>24/7/365 priority Live Chat and ticketing support.</p>
+                    <div className="col-md-6 col-xl-3 h-100">
+                        <div className="contact-box style1 h-100">
+                            <div className="contact-icon"><Image src="/assets/img/icon/phone2.png" alt="img" width={70} height={70}   /></div>
+                            <h3 className="title">Phone</h3>
+                            <p>+1 (972) 957-4009</p>
+                            <p style={{"visibility":"hidden"}}>Dummy</p>
                         </div>
                     </div>
-                    <div className="col-md-6 col-xl-3">
-                        <div className="contact-box style1">
-                            <div className="contact-icon"><Image src="/assets/img/icon/clock.png" alt="img" width={70} height={70}   /></div>
-                            <h3 className="title">Opening Hour</h3>
-                            <p>Sunday-Fri: 9 AM – 6 PM Saturday: 9 AM – 4 PM</p>
+                    <div className="col-md-6 col-xl-3 h-100">
+                        <div className="contact-box style1 h-100">
+                            <div className="contact-icon"><Image src="/assets/img/icon/clock2.png" alt="img" width={70} height={70}   /></div>
+                            <h3 className="title">Operating Hours</h3>
+                            <p>Sunday - Fri: 9 AM – 12 AM </p>
+                            <p>Sat & Sun: 9 AM – 1 AM</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +50,7 @@ const Contact3 = () => {
                 <div className="row gx-60 gy-5">
                     <div className="col-xl-6">
                         <div className="contact-form-thumb">
-                        <Image src="/assets/img/contact/contactThumb2_1.png" alt="img" width={933} height={634}   />
+                        <Image src="/assets/img/contact/contactThumb2_1.jpg" alt="img" width={933} height={634}  className="dca-contact-getintouch-img" />
                          
                         </div>
                     </div>
@@ -83,7 +87,8 @@ const Contact3 = () => {
                                         evolve user<span className="checkmark"></span></label>
                                 </div>
                                 <div className="col-12 form-group mb-0">
-                                    <button className="theme-btn w-100">SUBMIT NOW <i className="bi bi-arrow-right bg-transparent text-white"></i></button>
+                                    {/* <button className="theme-btn w-100">SUBMIT NOW <i className="bi bi-arrow-right bg-transparent text-white"></i></button> */}
+                                    <button className="btn btn-secondary w-100" disabled>SUBMIT NOW <i className="bi bi-arrow-right bg-transparent text-white"></i></button>
                                 </div>
                             </form>
                         </div>
@@ -95,7 +100,7 @@ const Contact3 = () => {
 
     <div className="map-wrapper contact-area-map">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28821.965472924858!2d89.07524545!3d25.4467646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcb92fb4d9696d%3A0x74b18fed6b93e5e5!2sNobabgonj%20National%20garden!5e0!3m2!1sen!2sbd!4v1724820772279!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5384668537176!2d-97.11601162462267!3d32.724889786648696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d84e8e5d64d%3A0x3d95b3311785e13b!2sDesi%20Cravings!5e0!3m2!1sen!2sus!4v1750540031410!5m2!1sen!2sus"
             height="550" loading="lazy"
             ></iframe>
     </div>            

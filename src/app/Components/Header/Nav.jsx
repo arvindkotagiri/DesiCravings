@@ -4,9 +4,9 @@ import DropDown from './DropDown';
 export default function Nav({ setMobileToggle }) {
   return (
     <ul className="cs_nav_list fw-medium">
-      <li className="menu-item-has-children">
+      <li className="dc-home-btn">
         <Link href="/">Home</Link>
-        <DropDown>
+        {/* <DropDown>
           <ul>
             <li>
               <Link href="/" onClick={() => setMobileToggle(false)}>
@@ -24,9 +24,10 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>            
           </ul>
-        </DropDown>
+        </DropDown> */}
       </li>
-      <li className="menu-item-has-children">
+      {/* Pages Menu ----- Removed */}
+      {/* <li className="menu-item-has-children">
         <Link href="#">Pages</Link>
         <DropDown>
           <ul>
@@ -88,13 +89,13 @@ export default function Nav({ setMobileToggle }) {
                       
           </ul>
         </DropDown>
-      </li>  
+      </li>   */}
 
-      <li className="menu-item-has-children">
+      <li className="dc-menu-btn">
         <Link href="/menu" onClick={() => setMobileToggle(false)}>
         Food Menu
         </Link>
-        <DropDown>
+        {/* <DropDown>
           <ul>
             <li>
               <Link href="/menu" onClick={() => setMobileToggle(false)}>
@@ -107,10 +108,10 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>
           </ul>
-        </DropDown>
+        </DropDown> */}
       </li> 
-      
-      <li className="menu-item-has-children">
+      {/* Blog Menu ----- Removed */}
+      {/* <li className="menu-item-has-children">
         <Link href="/blog" onClick={() => setMobileToggle(false)}>
           Blog
         </Link>
@@ -141,8 +142,9 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
-      </li>
-      <li className="menu-item-has-children">
+      </li> */}
+      {/* Shop Menu ----- Removed */}
+      {/* <li className="menu-item-has-children">
         <Link href="/shop" onClick={() => setMobileToggle(false)}>
         Shop
         </Link>
@@ -185,25 +187,11 @@ export default function Nav({ setMobileToggle }) {
             </li>                                                                             
           </ul>
         </DropDown>
-      </li>
-      <li className="menu-item-has-children">
+      </li> */}
+      <li className="dc-contact-btn">
         <Link href="/contact" onClick={() => setMobileToggle(false)}>
         Contact
         </Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link href="/contact" onClick={() => setMobileToggle(false)}>
-              Contact Us 1
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact2" onClick={() => setMobileToggle(false)}>
-                Contact Us 2
-              </Link>
-            </li>                         
-          </ul>
-        </DropDown>
       </li>
 
     </ul>

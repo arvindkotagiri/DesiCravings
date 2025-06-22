@@ -1,5 +1,5 @@
 import BreadCumb from '@/app/Components/Common/BreadCumb';
-import FoodItem4 from '@/app/Components/FoodItem/FoodItem4';
+import FoodItem1 from '@/app/Components/FoodItem/FoodItem1';
 import Gallery1 from '@/app/Components/Gallery/Gallery1';
 import Timer2 from '@/app/Components/Timer/Timer2';
 import React from 'react';
@@ -9,11 +9,11 @@ const page = () => {
     <div>
              <BreadCumb
                 bgimg="/assets/img/bg/breadcumb.jpg"
-                Title="Food Menu 1"
+                Title="Food Menu"
             ></BreadCumb>   
-            <FoodItem4></FoodItem4>
-            <Timer2></Timer2>  
-            <Gallery1></Gallery1>       
+            <FoodItem1></FoodItem1>
+            {/* <Timer2></Timer2>  
+            <Gallery1></Gallery1>        */}
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Footer1 from '../Components/Footer/Footer1';
 
 const layout = ({ children }) => {
     return (
-        <div className='main-page-area2 bg-color2'>
+        <div className='main-page-area bg-color2'>
             <Header2></Header2>
             {children}
             <Footer1></Footer1>

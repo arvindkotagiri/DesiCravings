@@ -1,6 +1,7 @@
 import React from 'react';
 import Header2 from '../Components/Header/Header2';
 import Footer1 from '../Components/Footer/Footer1';
+import { Analytics } from '@vercel/analytics/next';
 
 const DefalultLayout = ({ children }) => {
     return (
@@ -8,6 +9,7 @@ const DefalultLayout = ({ children }) => {
             <Header2></Header2>
             {children}
             <Footer1></Footer1>
+            <Analytics />
         </div>
     );
 };

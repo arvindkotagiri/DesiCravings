@@ -7,7 +7,7 @@ export const dcBreakfastItems = [
     price: "$4.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Breakfast/Ghee Karam Idli.jpg",
     title: "Ghee Karam Idli",
     content:
       "Delicious steamed rice cakes covered in aromatic clarified butter with a hint of spice.",

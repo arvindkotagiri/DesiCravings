@@ -1,188 +1,166 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
-import FoodItemCard2 from "../Card/FoodItemCard2";
+import FoodItemCard from "../Card/FoodItemCard";
+
+import {
+  dcAppetizersItems,
+  dcBreakfastItems,
+  dcCurryItems,
+  dcDessertItems,
+  dcDrinktItems,
+  dcEntreesItems,
+  dcIndoChineseItems,
+  dcPulavItems,
+  dcSnackItems,
+  dcThaaliItems,
+} from "./FoodItems";
+
+const categories = [
+  "Breakfast",
+  "Snacks",
+  "Thali",
+  "Appetizers",
+  "Entrees",
+  "Curries",
+  "Pulav",
+  "IndoChinese",
+  "Drinks",
+  "Desserts",
+];
+
+const getItemsForCategory = (cat) => {
+  switch (cat) {
+    case "Breakfast":
+      return dcBreakfastItems;
+    case "Snacks":
+      return dcSnackItems;
+    case "Thali":
+      return dcThaaliItems;
+    case "Appetizers":
+      return dcAppetizersItems;
+    case "Entrees":
+      return dcEntreesItems;
+    case "Curries":
+      return dcCurryItems;
+    case "Pulav":
+      return dcPulavItems;
+    case "IndoChinese":
+      return dcIndoChineseItems;
+    case "Drinks":
+      return dcDrinktItems;
+    case "Desserts":
+      return dcDessertItems;
+    default:
+      return [];
+  }
+};
 
 const FoodItem2 = () => {
-    return (
-        <section className="food-menu-section fix section-padding pt-0">
-        <div className="food-menu-wrapper-container style2">
-            <div className="container">
-                <div className="food-menu-wrapper style2 section-padding">
-                    <div className="container">
-                        <div className="title-area">
-                            <div className="sub-title text-center wow fadeInUp" data-wow-delay="0.5s">
-                            <Image className="me-1" src="/assets/img/icon/titleIcon.svg" alt="img" width={20} height={20}   />
-                                POPULAR DISHES<Image className="ms-1" src="/assets/img/icon/titleIcon.svg" alt="img" width={20} height={20}   />
-                            </div>
-                            <h2 className="title wow fadeInUp" data-wow-delay="0.7s">
-                                Our Most Popular Deals
-                            </h2>
-                        </div>
-                        <div className="food-menu-tab-wrapper style2">
-                            <div className="row gy-5">
-                                <div className="col-xl-4 d-flex align-items-center justify-content-center">
-                                    <div className="tab-left">
-                                        <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link active" id="pills-chinesePasta-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-chinesePasta"
-                                                    role="tab" aria-controls="pills-chinesePasta" aria-selected="true">
-                                                        <FoodItemCard2
-                                                            img="/assets/img/menu/menuThumb1_1.png"
-                                                            title="Chinese Pasta"
-                                                            content="It's a testament to our."
-                                                            price="$15.99"                                                            
-                                                        >
-                                                        </FoodItemCard2>
-                                                </div>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-chickenFriedRice-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-chickenFriedRice"
-                                                    role="tab" aria-controls="pills-chickenFriedRice"
-                                                    aria-selected="false">
-                                                    <FoodItemCard2
-                                                        img="/assets/img/menu/menuThumb1_2.png"
-                                                        title="Chicken Fried Rice"
-                                                        content="It's a testament to our."
-                                                        price="$25.99"
-                                                    ></FoodItemCard2>
-                                                </div>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-chickenPizza-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#pills-chickenPizza" role="tab"
-                                                    aria-controls="pills-chickenPizza" aria-selected="false">
-                                                    <FoodItemCard2
-                                                        img="/assets/img/menu/menuThumb1_3.png"
-                                                        title="Chicken Pizza"
-                                                        content="It's a testament to our."
-                                                        price="$115.99"
-                                                    ></FoodItemCard2>
-                                                </div>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-chickenNoodles-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-chickenNoodles"
-                                                    role="tab" aria-controls="pills-chickenNoodles"
-                                                    aria-selected="false">
-                                                    <FoodItemCard2
-                                                        img="/assets/img/menu/menuThumb1_4.png"
-                                                        title="Chicken Noodles"
-                                                        content="It's a testament to our."
-                                                        price="$154.99"
-                                                    ></FoodItemCard2>
-                                                </div>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-grilledChicken-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-grilledChicken"
-                                                    role="tab" aria-controls="pills-grilledChicken"
-                                                    aria-selected="false">
-                                                    <FoodItemCard2
-                                                        img="/assets/img/menu/menuThumb1_5.png"
-                                                        title="Grilled Chicken"
-                                                        content="It's a testament to our."
-                                                        price="$55.99"
-                                                    ></FoodItemCard2>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+  const [isActive, setIsActive] = useState("Breakfast");
+  const items = getItemsForCategory(isActive);
 
-                                <div className="col-xl-4 d-flex align-items-center justify-content-center">
-                                    <div className="middle-tab-content">
-                                        <div className="tab-content" id="pills-tabContent">
-                                            <div className="tab-pane fade show active" id="pills-chinesePasta"
-                                                role="tabpanel" aria-labelledby="pills-chinesePasta-tab" tabIndex="0">
-                                                <div className="menuthumb">
-                                                    <Image src="/assets/img/menu/menuThumb3_1.png" alt="img" width={449} height={520}   />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+  return (
+    <section
+      className="container-fluid py-5"
+      style={{ backgroundColor: "white" }}
+    >
+      {/* Mobile: Category Dropdown */}
+      <div className="d-md-none mb-4 px-3">
+        <select
+          className="form-select"
+          value={isActive}
+          onChange={(e) => setIsActive(e.target.value)}
+        >
+          {categories.map((cat) => (
+            <option key={cat} value={cat}>
+              {cat}
+            </option>
+          ))}
+        </select>
+      </div>
 
-                                <div className="col-xl-4 d-flex align-items-center justify-content-center">
-                                    <div className="tab-right">
-                                        <ul className="nav nav-pills mb-3" id="pills-tab2" role="tablist">
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-EggCucumber-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#pills-EggCucumber" role="tab"
-                                                    aria-controls="pills-EggCucumber" aria-selected="true">
-                                                    <FoodItemCard2
-                                                        img="/assets/img/menu/menuThumb1_6.png"
-                                                        title="Egg and Cucumber"
-                                                        content="It's a testament to our."
-                                                        price="$65.99"
-                                                    ></FoodItemCard2>  
-
-                                                </div>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-chickenWhiteRice-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-chickenWhiteRice"
-                                                    role="tab" aria-controls="pills-chickenWhiteRice"
-                                                    aria-selected="false">
-                                                    <FoodItemCard2
-                                                        img="/assets/img/menu/menuThumb1_7.png"
-                                                        title="Chicken White Rice"
-                                                        content="It's a testament to our."
-                                                        price="$135.99"
-                                                    ></FoodItemCard2> 
-                                                </div>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-specialBurger-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#pills-specialBurger" role="tab"
-                                                    aria-controls="pills-specialBurger" aria-selected="false">
-                                        <FoodItemCard2
-                                            img="/assets/img/menu/menuThumb1_8.png"
-                                            title="Spatial Barger"
-                                            content="It's a testament to our."
-                                            price="$95.99"
-                                        ></FoodItemCard2>
-                                                </div>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-vegetablesBurger-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-vegetablesBurger"
-                                                    role="tab" aria-controls="pills-vegetablesBurger"
-                                                    aria-selected="false">
-                                         <FoodItemCard2
-                                            img="/assets/img/menu/menuThumb1_9.png"
-                                            title="Vegetables Burger"
-                                            content="It's a testament to our."
-                                            price="$75.99"
-                                        ></FoodItemCard2> 
-
-                                                </div>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
-                                                <div className="nav-link" id="pills-briefChicken-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#pills-briefChicken" role="tab"
-                                                    aria-controls="pills-briefChicken" aria-selected="false">
-                                        <FoodItemCard2
-                                            img="/assets/img/menu/menuThumb1_10.png"
-                                            title="Brief Chicken"
-                                            content="It's a testament to our."
-                                            price="$44.99"
-                                        ></FoodItemCard2>  
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div className="row">
+        {/* Left Menu (tablet and up) */}
+        <div
+          className="col-md-2 d-none d-md-block position-sticky"
+          style={{ top: "80px", alignSelf: "flex-start" }}
+        >
+          <ul className="list-group">
+            {categories.map((cat) => (
+              <li
+                key={cat}
+                className={`list-group-item list-group-item-action ${
+                  isActive === cat ? "active" : ""
+                }`}
+                onClick={() => setIsActive(cat)}
+                style={{ cursor: "pointer" }}
+              >
+                {cat}
+              </li>
+            ))}
+          </ul>
         </div>
 
-    </section>
+        {/* Center Items */}
+        <div className="col-12 col-md-7">
+          <div className="row">
+            {items.map((item, index) => (
+              <div key={index} className="col-12 col-sm-6 mb-4">
+                <FoodItemCard
+                  img={item.img}
+                  title={item.title}
+                  content={item.content}
+                  price={item.price}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
 
-    );
+        {/* Right Deal Banner (tablet and up) */}
+        <div className="col-md-3 d-none d-md-block">
+          <div className="">
+            <Image
+              src="/assets/Images/Deals/1.jpg"
+              alt="Deal 1"
+              className="img-fluid"
+              width={500}
+              height={600}
+            />
+          </div>
+          <div className="mt-3">
+            <Image
+              src="/assets/Images/Deals/1.jpg"
+              alt="Deal 1"
+              className="img-fluid"
+              width={500}
+              height={600}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile: Deal Banners */}
+      <div className="d-md-none mt-5 text-center">
+        <h5>Ongoing Deals</h5>
+        <Image
+          src="/assets/Images/Deals/1.jpg"
+          alt="Deal 1"
+          className="img-fluid my-3"
+          width={300}
+          height={150}
+        />
+        <Image
+          src="/assets/Images/Deals/1.jpg"
+          alt="Deal 2"
+          className="img-fluid mb-3"
+          width={300}
+          height={150}
+        />
+      </div>
+    </section>
+  );
 };
 
 export default FoodItem2;

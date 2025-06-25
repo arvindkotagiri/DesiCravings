@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Link from 'next/link';
 import Image from 'next/image';
 import OpenNowStatus from './OpenNowStatus';
+import Script from 'next/script';
 export default function Header2({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState();
@@ -54,8 +55,8 @@ export default function Header2({ variant }) {
                 Follow Us:
                   <ul>
                     <li><a href="https://www.facebook.com/desicravingsarlington"><i className="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i className="bi bi-twitter"></i></a></li>
-                    <li><a href="#"><i className="bi bi-linkedin"></i></a></li>
+                    {/* <li><a href="#"><i className="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i className="bi bi-linkedin"></i></a></li> */}
                     <li><a href="https://www.instagram.com/mydesicravings/"><i className="bi bi-instagram"></i></a></li>
                 </ul>
                 </div>
@@ -71,7 +72,7 @@ export default function Header2({ variant }) {
             <div className="cs_main_header_left">
             <Link className="cs_site_branding" href="/">
                 {/* <Image src="/assets/img/logo/logoWhite.svg" alt="img" width={167} height={58}   /> */}
-                <Image src="/assets/img/logo/DC_Logo.jpg" alt="img" width={167} height={58}   />
+                <Image src="/assets/img/logo/DC_Logo.jpg" alt="img" width={160} height={60}   />
               </Link>
               </div>
               <div className="cs_main_header_center">
@@ -95,7 +96,7 @@ export default function Header2({ variant }) {
               <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a>
 
                 <div className="main-button">
-                <Link href="/contact" className="theme-btn" >ORDER NOW <i className="bi bi-arrow-right"></i></Link>
+                <Link href="https://order.online/store/desi-cravings-arlington-33842817/?hideModal=true&pickup=true&redirected=true" target='_blank' className="theme-btn" >ORDER NOW <i className="bi bi-arrow-right"></i></Link>
                   </div>
 
               </div>

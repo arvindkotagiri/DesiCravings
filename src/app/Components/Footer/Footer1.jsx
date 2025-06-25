@@ -55,10 +55,10 @@ const Footer1 = () => {
                                     Get in touch with us for authentic Telugu flavors served with a smile — right here in Texas.
                                 </p>
                                 <div className="social-icon d-flex align-items-center">
-                                    <a href="#"><i className="bi bi-facebook"></i></a>
-                                    <a href="#"><i className="bi bi-twitter-x"></i></a>
-                                    <a href="#"><i className="bi bi-linkedin"></i></a>
-                                    <a href="#"><i className="bi bi-youtube"></i></a>
+                                    <a href="https://www.facebook.com/desicravingsarlington"><i className="bi bi-facebook"></i></a>
+                                    {/* <a href="#"><i className="bi bi-twitter-x"></i></a>
+                                    <a href="#"><i className="bi bi-linkedin"></i></a> */}
+                                    <a href="https://www.instagram.com/mydesicravings/"><i className="bi bi-instagram"></i></a>
                                 </div>
                             </div>
                         </div>

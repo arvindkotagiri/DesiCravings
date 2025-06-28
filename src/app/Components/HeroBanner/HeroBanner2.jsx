@@ -1,112 +1,117 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
 
 const HeroBanner2 = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        swipeToSlide: true,
-        autoplay: true,
-        autoplaySpeed: 4000,        
-        responsive: [
-          {
-            breakpoint: 1399,
-            settings: {
-              slidesToShow: 1,
-            }
-          },
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 1,
-            }
-          },{
-            breakpoint: 575,
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ]
-      };  
+  const heroContent = [
+    {
+      img: "/assets/img/banner/bannerThumb2_1.png",
+      subtitle: "DESI CRAVINGS",
+      title: "Sizzling Dosas",
+    },
+    {
+      img: "/assets/img/banner/bannerThumb2_2.png",
+      subtitle: "DESI CRAVINGS",
+      title: "Authentic Pulavs",
+    },
+    {
+      img: "/assets/img/banner/bannerThumb2_3.png",
+      subtitle: "DESI CRAVINGS",
+      title: "South Indian Thali",
+    },
+  ];
 
-    const heroContent = [
-        {img:'/assets/img/banner/bannerThumb2_1.png', subtitle:'DESI CRAVINGS', title:'Sizzling Dosas', btnname:'ORDER NOW'},
-        {img:'/assets/img/banner/bannerThumb2_2.png', subtitle:'DESI CRAVINGS', title:'Authentic Pulavs', btnname:'ORDER NOW'},
-        {img:'/assets/img/banner/bannerThumb2_3.png', subtitle:'DESI CRAVINGS', title:'South Indian Thali', btnname:'ORDER NOW'},
-      ]; 
-
-    return (
-        <section className="banner-section fix">
-        <div className="slider-area">
-            <div className="swiper banner2-slider">
-                <div className="swiper-wrapper">
-                <Slider {...settings}>
-                {heroContent.map((item, i) => (
-                    <div key={i} className="swiper-slide">
-                        <div className="banner-wrapper style2 bg-img">
-                            <div className="shape1_1 d-none d-xxl-block float-bob-x" data-animation="slideInLeft"
-                                data-duration="2s" data-delay=".3s"><Image src="/assets/img/shape/bannerShape2_1.svg" alt="img" width={288} height={181}   /></div>
-                            <div className="shape1_2 d-none d-xxl-block float-bob-y" data-animation="slideInLeft"
-                                data-duration="2s" data-delay=".3s"><Image src="/assets/img/shape/bannerShape2_2.svg" alt="img" width={156} height={253}   /></div>
-                            <div className="shape1_3 d-none d-xxl-block" data-animation="slideInLeft" data-duration="3s"
-                                data-delay="2s"><Image src="/assets/img/shape/bannerShape2_3.svg" alt="img" width={279} height={160}   /></div>
-                            <div className="shape1_4 d-none d-xxl-block float-bob-x" data-animation="slideInLeft"
-                                data-duration="2s" data-delay=".3s"><Image src="/assets/img/shape/bannerShape2_4.svg" alt="img" width={189} height={214}   /></div>
-                            <div className="shape1_5 d-none d-xxl-block float-bob-y" data-animation="slideInLeft"
-                                data-duration="2s" data-delay=".3s"><Image src="/assets/img/shape/bannerShape2_5.svg" alt="img" width={143} height={160}   /></div>
-                            <div className="shape1_6 d-none d-xxl-block cir36"><Image src="/assets/img/shape/bannerShape1_6.svg" alt="img" width={75} height={75}   /></div>
-                            <div className="overlay"></div>
-                            <div className="banner-container">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-12 col-xxl-6">
-                                            <div className="banner-title-area">
-                                                <div className="banner-style1">
-                                                    <div className="section-title">
-                                                        <h6 className="sub-title" data-animation="slideInRight"
-                                                            data-duration="2s" data-delay=".3s"> {item.subtitle} </h6>
-                                                        <h1 className="title" data-animation="slideInRight"
-                                                            data-duration="2s" data-delay=".5s">
-                                                            {item.title}
-                                                        </h1>
-                                                        <Link className="theme-btn" href="https://order.online/store/desi-cravings-arlington-33842817/?hideModal=true&pickup=true&redirected=true" target='_blank' 
-                                                            data-animation="slideInRight" data-duration="2s"
-                                                            data-delay=".7s">{item.btnname} <i className="bi bi-arrow-right"></i></Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-12 col-xl-6 d-none d-xxl-block">
-                                            <div className="banner-thumb-area" data-tilt data-animation="slideInRight"
-                                                data-duration="2s" data-delay=".9s">
-                                                    <img src={item.img} alt="shape" />
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    ))}
-                    </Slider>
-
+  return (
+    <section
+      className="hero-banner-section position-relative"
+      style={{
+        backgroundColor: "#FFF8F0",
+        padding: "4rem 0",
+        overflow: "hidden",
+      }}
+    >
+      <Slider {...settings}>
+        {heroContent.map((item, i) => (
+          <div key={i}>
+            <div className="container">
+              <div className="row align-items-center g-5">
+                {/* LEFT - TEXT */}
+                <div className="col-lg-6">
+                  <div className="text-start">
+                    <h6
+                      className="fw-bold mb-3"
+                      style={{ color: "#F4A300", letterSpacing: "1px" }}
+                    >
+                      {item.subtitle}
+                    </h6>
+                    <h1
+                      className="display-4 fw-bold mb-4"
+                      style={{ color: "#2C1E16" }}
+                    >
+                      {item.title}
+                    </h1>
+                    <p className="lead text-muted mb-4" style={{ color: "#212121" }}>
+                      Experience the bold flavors of Telugu cuisine crafted by
+                      passionate chefs in Texas.
+                    </p>
+                    {/* <Link
+                      href="https://order.online/store/desi-cravings-arlington-33842817/?hideModal=true&pickup=true&redirected=true"
+                      className="btn btn-lg"
+                      style={{
+                        backgroundColor: "#F4A300",
+                        color: "#fff",
+                        padding: "12px 28px",
+                        borderRadius: "8px",
+                        fontWeight: "600",
+                        fontSize: "1rem",
+                      }}
+                      target="_blank"
+                    >
+                      ORDER NOW <i className="bi bi-arrow-right ms-2"></i>
+                    </Link> */}
+                  </div>
                 </div>
 
-                <div className="arrow-prev2"><img src="/assets/img/icon/arrowPrev.svg" alt="Icon" /></div>
-                <div className="arrow-next2"><img src="/assets/img/icon/arrowNext.svg" alt="Icon" /></div>
-                <div className="pagination-className2 swiper-pagination"></div>
+                {/* RIGHT - IMAGE */}
+                <div className="col-lg-6 text-center">
+                  <div
+                    className="rounded overflow-hidden"
+                    style={{
+                      maxWidth: "500px",
+                      margin: "0 auto",
+                      border: "8px solid #fff3dc",
+                    }}
+                  >
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      width={600}
+                      height={400}
+                      className="img-fluid"
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        ))}
+      </Slider>
     </section>
-    );
+  );
 };
 
 export default HeroBanner2;

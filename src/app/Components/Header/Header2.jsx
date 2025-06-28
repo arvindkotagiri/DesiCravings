@@ -40,7 +40,7 @@ export default function Header2({ variant }) {
         mobileToggle ? 'cs_mobile_toggle_active' : ''
       } ${isSticky ? isSticky : ''}`}
     >
-      <div className="cs_top_header">
+      <div className="cs_top_header" style={{ backgroundColor: "#C62828"}}>
         <div className="container">
           <div className="cs_top_header_in">
             <div className="cs_top_header_left header-info">
@@ -66,7 +66,7 @@ export default function Header2({ variant }) {
         </div>
       </div>      
 
-      <div className="cs_main_header">
+      <div className="cs_main_header" style={{ backgroundColor: "#010F1C"}}>
         <div className="container">
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
@@ -77,8 +77,8 @@ export default function Header2({ variant }) {
   <Image
     src="/assets/img/logo/DC_Logo.jpg"
     alt="Desi Cravings Logo"
-    width={150} // adjust based on header design
-    height={75}
+    width={150} //108
+    height={75} //57
     // style={{ height: "auto", width: "100%", maxWidth: "180px", objectFit: "contain" }}
     priority
   />
@@ -103,12 +103,22 @@ export default function Header2({ variant }) {
             <div className="cs_main_header_right">
               <div className="header-btn d-flex align-items-center">
 
-              <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a>
-
-                <div className="main-button">
-                <Link href="https://order.online/store/desi-cravings-arlington-33842817/?hideModal=true&pickup=true&redirected=true" target='_blank' className="theme-btn" >ORDER NOW <i className="bi bi-arrow-right"></i></Link>
-                  </div>
-
+              {/* <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a> */}
+                    <Link
+                      href="https://order.online/store/desi-cravings-arlington-33842817/?hideModal=true&pickup=true&redirected=true"
+                      className="btn btn-lg"
+                      style={{
+                        backgroundColor: "#C62828",
+                        color: "#fff",
+                        padding: "12px 28px",
+                        borderRadius: "8px",
+                        fontWeight: "600",
+                        fontSize: "1rem",
+                      }}
+                      target="_blank"
+                    >
+                      ORDER NOW <i className="bi bi-arrow-right ms-2"></i>
+                    </Link>
               </div>
             </div>
           </div>

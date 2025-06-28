@@ -44,7 +44,7 @@ const About2 = () => {
                 poster="/assets/img/about/aboutThumb2_1.png"
               >
                 <source
-                  src="/assets/images/about_video.mp4"
+                  src="/assets/Images/about_video.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.

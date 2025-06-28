@@ -52,7 +52,7 @@ const CtaBanner3 = () => {
     }}
   >
     <Image
-      src="/assets/images/cta-background.jpg"
+      src="/assets/Images/cta-background.jpg"
       alt="Promo Image"
       fill
       style={{ objectFit: "cover" }}

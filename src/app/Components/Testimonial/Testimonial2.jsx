@@ -66,8 +66,8 @@ const Testimonial2 = () => {
 
   return (
     <section
-      className="testimonial-section section-padding"
-      style={{ backgroundColor: "#FFF8F0" }}
+      className="testimonial-section dc-section-padding"
+      style={{ backgroundColor: "#FFF8F0", paddingBottom: "60px"}}
     >
       <div className="container">
         {/* Section Heading */}
@@ -90,7 +90,7 @@ const Testimonial2 = () => {
               height={20}
             />
           </div>
-          <h2 style={{ color: "#C62828", fontWeight: "700" }}>
+          <h2 style={{ color: "#212121", fontWeight: "700" }}>
             What Our Happy Customers Say
           </h2>
         </div>

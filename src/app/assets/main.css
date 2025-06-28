@@ -13969,3 +13969,47 @@ margin-bottom: 0 !important;
 .dc-cta-order-btn:focus .order-btn-icon {
   color: #212121 !important; /* Charcoal Black */
 }
+
+.nav-pills .nav-item.active-tab {
+  background-color: #FFF0E0;
+  color: #C62828;
+  border-color: #C62828;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #F9E8D6;
+  color: #C62828;
+}
+
+.food-menu-section .food-menu-tab-wrapper {
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-pills .nav-item {
+    min-width: 100%;
+    text-align: center;
+  }
+}
+
+.about-us-section {
+  background-color: #FFF8F0;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #5c5c5c;
+}
+
+.text-slider-item {
+  margin: 0 24px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #C62828;
+  text-transform: uppercase;
+}
+
+.dc-section-padding {
+  padding-top: 60px;
+  /* padding: 60px 0px; */
+}

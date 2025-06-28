@@ -387,43 +387,43 @@ export const dcAppetizersItems = [
 
 export const dcEntreesItems = [
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Channa Masala.jpg",
     title: "Channa Masala",
     content: "",
     price: "$8.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Dal Tadka.jpg",
     title: "Dal Tadka",
     content: "",
     price: "$9.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Gutti Vankaya Curry.jpg",
     title: "Gutti Vankaya Curry",
     content: "",
     price: "$9.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Kadai Paneer.jpg",
     title: "Kadai Paneer",
     content: "",
     price: "$10.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Malai Kofta.jpg",
     title: "Malai Kofta",
     content: "",
     price: "$10.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Mix Veg Kurma.jpg",
     title: "Mix Veg Kurma",
     content: "",
     price: "$10.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Chicken Curry.jpg",
     title: "Chicken Curry",
     content: "",
     price: "$9.99",
@@ -435,13 +435,13 @@ export const dcEntreesItems = [
     price: "$11.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Gongura Chicken Curry.jpg",
     title: "Gongura Chicken Curry",
     content: "",
     price: "$10.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Goat Curry.jpg",
     title: "Goat Curry",
     content: "",
     price: "$13.99",
@@ -453,13 +453,13 @@ export const dcEntreesItems = [
     price: "$14.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Shrimp Curry.jpg",
     title: "Shrimp Curry",
     content: "",
     price: "$13.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Entrees/Egg Curry.jpg",
     title: "Egg Curry",
     content: "",
     price: "$10.99",
@@ -468,31 +468,31 @@ export const dcEntreesItems = [
 
 export const dcCurryItems = [
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Curries/Roti Pachadi (Pickle).jpg",
     title: "Roti Pachadi (Pickle)",
     content: "",
     price: "$3.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Curries/Rasam.jpg",
     title: "Rasam",
     content: "",
     price: "$3.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Curries/Pappu (Dal).jpg",
     title: "Pappu (Dal)",
     content: "",
     price: "$5.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Curries/Sambar.jpg",
     title: "Sambar",
     content: "",
     price: "$5.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Curries/Veg Curry.jpg",
     title: "Veg Curry",
     content: "",
     price: "$5.99",
@@ -504,7 +504,7 @@ export const dcCurryItems = [
     price: "$6.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Curries/Non Veg Curry.jpg",
     title: "Non Veg Curry",
     content: "",
     price: "$11.99",
@@ -516,7 +516,7 @@ export const dcCurryItems = [
     price: "$11.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_6.png",
+    img: "/assets/Images/Menu Images/Curries/Flavoured Rice.jpg",
     title: "Flavoured Rice",
     content: "",
     price: "$6.99",
@@ -537,43 +537,43 @@ export const dcCurryItems = [
 
 export const dcPulavItems = [
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Pulavs/Veg Pulav.jpg",
     title: "Veg Pulav",
     content: "",
     price: "$8.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Pulavs/Paneer Pulav.jpg",
     title: "Paneer Pulav",
     content: "",
     price: "$10.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Pulavs/Chicken Pulav.jpg",
     title: "Chicken Pulav",
     content: "",
     price: "$10.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Pulavs/Gongura Chicken Pulav.jpg",
     title: "Gongura Chicken Pulav",
     content: "",
     price: "$12.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Pulavs/Chicken Fry Piece Pulav.jpg",
     title: "Chicken Fry Piece Pulav",
     content: "",
     price: "$12.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Pulavs/Mutton Pulav.jpg",
     title: "Mutton Pulav",
     content: "",
     price: "$13.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Pulavs/Gongura Mutton Pulav.jpg",
     title: "Gongura Mutton Pulav",
     content: "",
     price: "$14.99",
@@ -652,31 +652,31 @@ export const dcIndoChineseItems = [
 
 export const dcDrinktItems = [
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Drinks/Coke.jpg",
     title: "Coke",
     content: "",
     price: "$0.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Drinks/Diet Coke.jpg",
     title: "Diet Coke",
     content: "",
     price: "$0.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Drinks/Sprite.jpg",
     title: "Sprite",
     content: "",
     price: "$0.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Drinks/Pepsi.jpg",
     title: "Pepsi",
     content: "",
     price: "$0.99",
   },
   {
-    img: "/assets/img/menu/menuThumb1_2.png",
+    img: "/assets/Images/Menu Images/Drinks/Water Bottle.jpg",
     title: "Water Bottle",
     content: "",
     price: "$0.99",

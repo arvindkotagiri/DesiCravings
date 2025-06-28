@@ -11,6 +11,7 @@ const DefalultLayout = ({ children }) => {
             {children}
             <Footer1></Footer1>
             <Analytics />
+            <SpeedInsights />
         </div>
     );
 };

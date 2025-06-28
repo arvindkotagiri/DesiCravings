@@ -10,7 +10,7 @@ const About2 = () => {
         const [toggle, setToggle] = useState(false);
       
         const handelClick = () => {
-          setIframeSrc("assets/img/about_video.mp4");
+          setIframeSrc("assets/images/about video.mp4");
           setToggle(!toggle);
         };
         const handelClose = () => {
@@ -36,14 +36,25 @@ const About2 = () => {
                 <div className="about-us section-padding">
                     <div className="row d-flex align-items-center">
                         <div className="col-lg-6 d-flex align-items-center justify-content-center justify-content-xl-start">
-                            <div className="about-thumb mb-5 mb-lg-0">
-                            <Image src="/assets/img/about/aboutThumb2_1.png" alt="img" width={875} height={536}   />
+                            {/* <div className="about-thumb mb-5 mb-lg-0"> */}
+                            {/* <Image src="/assets/img/about/aboutThumb2_1.png" alt="img" width={875} height={536}   /> */}
                                 
-                                <div className="video-wrap">
-                                    <a onClick={handelClick} 
-                                        className="play-btn popup-video"><Image className="cir36" src="/assets/img/shape/player.svg" alt="img" width={152} height={152}   /></a>
-                                </div>
-                            </div>
+                                <div>
+  <video
+  className="w-100"
+  style={{ maxHeight: "536px", borderRadius: "12px", objectFit: "cover" }}
+  controls
+  playsInline
+  muted
+  autoPlay
+  loop
+  preload="metadata"
+  poster="/assets/img/about/aboutThumb2_1.png"
+>
+  <source src="/assets/images/about video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+</div>
 
                         </div>
                         <div className="col-lg-6">
@@ -103,11 +114,11 @@ const About2 = () => {
         ))}
       </Marquee>
     </div>
-        <VideoModal
+        {/* <VideoModal
             isTrue={toggle}
             iframeSrc={iframeSrc}   
             handelClose={handelClose}        
-        ></VideoModal> 
+        ></VideoModal>  */}
 
     </section>
     );

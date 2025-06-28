@@ -18,7 +18,8 @@ const page = () => {
            <HeroBanner2></HeroBanner2> 
            {/* <Offer2></Offer2> */}
            {/* <BestSelling2></BestSelling2> */}
-           <CtaBanner1></CtaBanner1>
+           {/* Today's Special below*/}
+           {/* <CtaBanner1></CtaBanner1>    */}  
            {/* <FeatureCategory1></FeatureCategory1> */}
            <FoodItem1></FoodItem1>
            {/* <FoodItem2></FoodItem2> */}

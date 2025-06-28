@@ -76,7 +76,7 @@ const HeroBanner2 = () => {
                                                             data-duration="2s" data-delay=".5s">
                                                             {item.title}
                                                         </h1>
-                                                        <Link className="theme-btn" href="/menu"
+                                                        <Link className="theme-btn" href="https://order.online/store/desi-cravings-arlington-33842817/?hideModal=true&pickup=true&redirected=true" target='_blank' 
                                                             data-animation="slideInRight" data-duration="2s"
                                                             data-delay=".7s">{item.btnname} <i className="bi bi-arrow-right"></i></Link>
                                                     </div>

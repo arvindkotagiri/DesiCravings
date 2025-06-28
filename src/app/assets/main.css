@@ -177,7 +177,7 @@ a {
   transition: all 0.4s ease-in-out;
 }
 a:hover {
-  color: var(--theme) !important;
+  color: var(--theme);
 }
 
 p {
@@ -13928,4 +13928,44 @@ margin-bottom: 0 !important;
 .dca-contact-getintouch-img {
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  max-height: 80px; /* or adjust to fit your navbar */
+  padding: 8px 0;
+}
+
+.dc-cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.dc-cta-order-btn {
+  background-color: #C62828; /* Deep Tomato Red */
+  color: #FFF8F0; /* Ivory White */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgb(198 40 40 / 0.4);
+  border: none;
+}
+
+.dc-cta-order-btn:hover,
+.dc-cta-order-btn:focus {
+  background-color: #B87333; /* Warm Copper */
+  color: #212121; /* Charcoal Black */
+  box-shadow: 0 6px 12px rgb(184 115 51 / 0.6);
+  text-decoration: none;
+}
+
+.order-btn-icon {
+  font-size: 1.3rem;
+  color: #FFF8F0; /* Ivory White */
+  transition: color 0.3s ease;
+}
+
+.dc-cta-order-btn:hover .order-btn-icon,
+.dc-cta-order-btn:focus .order-btn-icon {
+  color: #212121 !important; /* Charcoal Black */
 }

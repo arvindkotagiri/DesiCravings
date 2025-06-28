@@ -11,32 +11,32 @@ export default function Header2({ variant }) {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [searchToggle, setSearchToggle] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollPos) {
-        setIsSticky('cs-gescout_sticky'); // Scrolling down
-      } else if (currentScrollPos !== 0) {
-        setIsSticky('cs-gescout_show cs-gescout_sticky'); // Scrolling up
-      } else {
-        setIsSticky();
-      }
-      setPrevScrollPos(currentScrollPos); // Update previous scroll position
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollPos = window.scrollY;
+  //     if (currentScrollPos > prevScrollPos) {
+  //       setIsSticky('cs-gescout_sticky'); // Scrolling down
+  //     } else if (currentScrollPos !== 0) {
+  //       setIsSticky('cs-gescout_show cs-gescout_sticky'); // Scrolling up
+  //     } else {
+  //       setIsSticky();
+  //     }
+  //     setPrevScrollPos(currentScrollPos); // Update previous scroll position
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll); // Cleanup the event listener
-    };
-  }, [prevScrollPos]);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll); // Cleanup the event listener
+  //   };
+  // }, [prevScrollPos]);
 
   return (
     <div>
     <header
       className={`cs_site_header header_style_2 cs_style_1 header_sticky_style1 ${
         variant ? variant : ''
-      } cs_sticky_header cs_site_header_full_width ${
+      }  ${
         mobileToggle ? 'cs_mobile_toggle_active' : ''
       } ${isSticky ? isSticky : ''}`}
     >
@@ -72,7 +72,17 @@ export default function Header2({ variant }) {
             <div className="cs_main_header_left">
             <Link className="cs_site_branding" href="/">
                 {/* <Image src="/assets/img/logo/logoWhite.svg" alt="img" width={167} height={58}   /> */}
-                <Image src="/assets/img/logo/DC_Logo.jpg" alt="img" width={160} height={60}   />
+                {/* <Image src="/assets/img/logo/DC_Logo.jpg" alt="img" width={167} height={58}   /> */}
+               <div className="logo-wrapper">
+  <Image
+    src="/assets/img/logo/DC_Logo.jpg"
+    alt="Desi Cravings Logo"
+    width={150} // adjust based on header design
+    height={75}
+    // style={{ height: "auto", width: "100%", maxWidth: "180px", objectFit: "contain" }}
+    priority
+  />
+</div>
               </Link>
               </div>
               <div className="cs_main_header_center">

@@ -53,15 +53,15 @@ const About2 = () => {
           </div>
 
           {/* TEXT */}
-          <div className="col-lg-6">
+          <div className="col-lg-6 d-flex flex-column justify-content-center align-items-start align-items-lg-start text-center text-lg-start">
             <div className="about-content">
-              <h5 className="sub-title d-flex align-items-center gap-2 mb-2 fw-semibold" style={{ color: "#F4A300"}}>
+              <h5 className="sub-title d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-2 fw-semibold" style={{ color: "#F4A300"}}>
                 ABOUT US
               </h5>
-              <h2 className="mb-4 fw-bold" style={{ color: "#212121" }}>
+              <h2 className="mb-4 fw-bold text-center text-lg-start" style={{ color: "#212121" }}>
                 A Symphony of Telugu Flavors in Texas
               </h2>
-              <p className="mb-4 text-secondary fs-5">
+              <p className="mb-4 text-secondary fs-5 text-center text-lg-start">
                 Every dish at our restaurant is a celebration of Telugu
                 tradition — crafted with precision, care, and a passion for
                 bold, authentic flavors. Our experienced chefs bring deep

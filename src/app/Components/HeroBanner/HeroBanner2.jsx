@@ -52,18 +52,18 @@ const HeroBanner2 = () => {
                 <div className="col-lg-6">
                   <div className="text-start">
                     <h6
-                      className="fw-bold mb-3"
+                      className="fw-bold mb-3 text-center text-lg-start"
                       style={{ color: "#F4A300", letterSpacing: "1px" }}
                     >
                       {item.subtitle}
                     </h6>
                     <h1
-                      className="display-4 fw-bold mb-4"
+                      className="display-4 fw-bold mb-4 text-center text-lg-start"
                       style={{ color: "#2C1E16" }}
                     >
                       {item.title}
                     </h1>
-                    <p className="lead text-muted mb-4" style={{ color: "#212121" }}>
+                    <p className="lead text-muted mb-4 text-center text-lg-start" style={{ color: "#212121" }}>
                       Experience the bold flavors of Telugu cuisine crafted by
                       passionate chefs in Texas.
                     </p>

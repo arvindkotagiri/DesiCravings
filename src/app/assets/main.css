@@ -14093,3 +14093,95 @@ margin-bottom: 0 !important;
   padding-top: 60px;
   /* padding: 60px 0px; */
 }
+
+.dc-breadcrumb {
+  position: relative;
+  padding: 30px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dc-breadcrumb__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.dc-breadcrumb__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+}
+
+.dc-breadcrumb__nav {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dc-breadcrumb__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #F4A300; /* Your theme gold */
+}
+
+.dc-breadcrumb__list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  color: #ddd;
+  justify-content: center;
+}
+
+.dc-breadcrumb__item {
+  white-space: nowrap;
+}
+
+.dc-breadcrumb__item--active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.dc-breadcrumb__link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dc-breadcrumb__link:hover,
+.dc-breadcrumb__link:focus {
+  color: #F4A300;
+  outline: none;
+}
+
+.dc-breadcrumb__separator {
+  user-select: none;
+  color: #F4A300;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dc-breadcrumb {
+    padding: 20px 0;
+  }
+  .dc-breadcrumb__title {
+    font-size: 22px;
+  }
+  .dc-breadcrumb__list {
+    font-size: 12px;
+  }
+}
